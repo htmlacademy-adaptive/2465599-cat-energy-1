@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <a class="main-header_logo" href="index.html">
+      <img class="logo-picture" width="33" height="38"  alt="Логотип Кэт энерджи">
+      <img class="logo-text" width="101" height="18" alt="Кэт энерджи">
+    </a>
+    <nav class="nav-main">
+      <button class="nav-main_toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="nav-main_wrapper">
+      <ul class="navigation-list">
+        <li class="navigation-item_active">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a>
+            Каталог продукции
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a>
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+<section class="promo">
+  <h1 class="promo-text">Функциональное питание для котов</h1>
+  <p class="promo-text_cat">Занялся собой?Займись котом!</p>
+  <a class="button-promo" href="form.html">Подобрать программу</a>
+  <img src="index-can-mobile.png" width="280" height="270" alt="Упаковка корма Кэт энерджи">
+</section>
+<section class="advantages">
+  <h2 class="visually-hidden">Программа питания</h2>
+  <div class="advantages_wrapper">
+  <li class="advantages-list">
+    <ul class="advantages-item">
+    <svg class="advantages-icon" width="50" height="53"></svg>
+    <h3 class="advantages-title">Похудение</h3>
+    <p class="advantages-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+    <a class="advantages-link" href="#">"Каталог Slim"</a>
+    </ul>
+  </li>
+  <li class="advantages-list">
+    <ul class="advantages-item">
+    <svg class="advantages-icon" width="50" height="53"></svg>
+    <h3 class="advantages-title">Набор массы</h3>
+    <p class="advantages-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+    <a class="advantages-link" href="#">"Каталог Pro"</a>
+    </ul>
+  </li>
+  </div>
+</section>
+<section class="action">
+  <div class="action-wrapper">
+  <h2 class="title-action">Как это работает</h2>
+  <ul class="action-list">
+    <li class="action-item_compound">Функциональное питание содержит только полезные питательные вещества.</li>
+    <li class="action-item_viem">Выпускается в виде порошка,который нужно лишь залить кипятком и готово.</li>
+    <li class="action-item_replace">Замените один-два приема обычной еды на наше функциональное питание.</li>
+    <li class="action-item_result">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+  </ul>
+  <div>
+</section>
+<section class="example">
+  <div class="example_wrapper">
+    <h2 class="example_title">Живой пример</h2>
+    <p class="example-description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+    <dl class="example-stats">
+      <dt class="example-stats_item example-stats_item--weight">5кг</dt>
+      <dd class="example-stats_item-description">снижение веса</dd>
+      <dt class="example-stats_item example-stats_item--time">60 дней</dt>
+      <dd class="example-stats_item-description">затрачено времени</dd>
+    </dl>
+    <p class="example-cost">Затраты на питание:<span>15000 руб.</span></p>
+    <ul class="example_cat slider">
+      <li class="example_cat-item example-stats_item-thick slider">
+        <img class="example_cat-img slider" src="#" width="140" height="256" alt="Кот с лишним весом">
+      </li>
+      <li class="example_cat-item example_cat-item-normal slider">
+        <img class="example_cat-img slider" src="#" width="140" height="256" alt="Кот в ноpмальном весе">
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="contacts">
+  <h2 class="visually-hidden">Как нас найти?</h2>
+  <div class="contacts_wpapper">
+    <div class="container">
+    <div class="contacts-inner">
+      <h2 class="contacts-title">приглашаем к сотрудничеству дилеров!</h2>
+    </div>
+    <div class="contacts-adress">
+      <p class="contacts-adress_street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="contacts-adress_city">Санкт-Петербург</p>
+    </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639009892658!5m2!1sen!2sru"
+        width="766"
+        height="560"
+        allowfullscreen
+        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
+      ></iframe>
+  </div>
+</section>
+<section class="footer">
+  <div class="footer-wrapper">
+  <img class="footer-logo" src="#" alt="Кэт энерджи Логотип">
+  <ul class="footer-social">
+    <li class="footer-social_item">
+    <a class="footer-social_link" href="#">
+      <img src="#" alt="В контакте">
+      <span class="visually-hidden">В контакте</span>
+    </a>
+    </li>
+    <li class="footer-social_item">
+      <a class="footer-social_link" href="#">
+        <img src="#" alt="Ютуб">
+        <span class="visually-hidden">YouTube</span>
+      </a>
+      </li>
+      <li class="footer-social_item">
+        <a class="footer-social_link" href="#">
+          <img src="#" alt="Телеграмм">
+          <span class="visually-hidden">Телеграмм</span>
+        </a>
+        </li>
+  </ul>
+  </div>
+  <a class="footer_developer-link" href="#">
+    <h3 class="footer_developer">HTML Academy</h3>
+    <svg class="footer_developer-icon" width="27" height="34" ></svg>
+  </a>
+</section>
+  </main>
+
+</body>
+
+<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+
+</body>
+
 </html>
