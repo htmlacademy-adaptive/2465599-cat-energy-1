@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-
-<body>
-  <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo__picture" width="33" height="38" alt="Логотип Кэт энерджи">
-      <img class="header__logo__text" width="101" height="18" alt="Кэт энерджи">
+<body class="page__body">
+  <header class="main-header">
+    <a class="header-logo" href="index.html">
+      <img class="header-logo__picture" src="#" width="33" height="38" alt="Логотип Кэт энерджи">
+      <img class="header-logo__text" src="#" width="101" height="18" alt="Кэт энерджи">
     </a>
     <nav class="navigation-main">
       <button class="navigation-main__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="navigation-main__wrapper">
-        <ul class="navigation-list">
+        <ul class="navigation-list ">
           <li class="navigation-item">
-            <a href="index.html">
+            <a href="index.html" class="navigation-menu">
               Главная</a>
           </li>
-          <li class="navigation-item">
-            <a>
+          <li class="navigation-item navigation-item--active">
+            <a href="catalog.html" class="navigation-menu">
               Каталог продукции
             </a>
           </li>
           <li class="navigation-item">
-            <a>
+            <a href="form.html" class="navigation-menu">
               Подбор программы
             </a>
           </li>
@@ -35,13 +34,14 @@
       </div>
     </nav>
   </header>
+  <main>
   <section class="catalog">
     <h1 class="catalog__title">Каталог продукции</h1>
     <h2 class="visually-hidden">Основные товары</h2>
     <ul class="catalog__product-list">
       <li class="catalog__product-card">
         <a class="catalog__product__link" href="#">
-          <img class="catalog__product__item" alt="Корм с курицей">
+          <img class="catalog__product__item" src="#" alt="Корм с курицей">
         </a>
         <a class="catalog__product__link-title" href="#">
           <h3 class="catalog__product__item-title">Cat Energy PRO 500г</h3>
@@ -60,7 +60,7 @@
       </li>
       <li class="catalog__product-card">
         <a class="catalog__product__link" href="#">
-          <img class="catalog__product__item" alt="Корм Энерджи с Курицей 1000 г">
+          <img class="catalog__product__item" src="#" alt="Корм Энерджи с Курицей 1000 г">
         </a>
         <a class="catalog__product__link-title" href="#">
           <h3 class="catalog__product__item-title">Cat Energy PRO 1000 г</h3>
@@ -79,7 +79,7 @@
       </li>
       <li class="catalog__product-card">
         <a class="catalog__product-link" href="#">
-          <img class="catalog__product-item" alt="Корм Энерджи с рыбой 500 г">
+          <img class="catalog__product-item" src="#" alt="Корм Энерджи с рыбой 500 г">
         </a>
         <a class="catalog__product__link-title" href="#">
           <h3 class="catalog__product__item-title">Cat Energy PRO 500г</h3>
@@ -98,7 +98,7 @@
       </li>
       <li class="catalog__product-card">
         <a class="catalog__product__link" href="#">
-          <img class="catalog__product__item" alt="Корм Энерджи с рыбой 1000 г">
+          <img class="catalog__product__item" src="#" alt="Корм Энерджи с рыбой 1000 г">
         </a>
         <a class="catalog__product__link-title" href="#">
           <h3 class="catalog__product__item-title">Cat Energy PRO 1000 г</h3>
@@ -117,7 +117,7 @@
       </li>
       <li class="catalog__product-card">
         <a class="catalog__product__link" href="#">
-          <img class="catalog__product__item" alt="Корм Энерджи с гречкой 500 г">
+          <img class="catalog__product__item" src="#" alt="Корм Энерджи с гречкой 500 г">
         </a>
         <a class="catalog__product__link-title" href="#">
           <h3 class="catalog__product__item-title">Cat Energy Slim 500г</h3>
@@ -136,7 +136,7 @@
       </li>
       <li class="catalog__product-card">
         <a class="catalog__product__link" href="#">
-          <img class="catalog__product__item" alt="Корм Энерджи с гречкой 1000г">
+          <img class="catalog__product__item" src="#" alt="Корм Энерджи с гречкой 1000г">
         </a>
         <a class="catalog__product__link-title" href="#">
           <h3 class="catalog__product__item-title">Cat Energy Slim 1000 г</h3>
@@ -155,7 +155,7 @@
       </li>
       <li class="catalog__product-card">
         <a class="catalog__product-link" href="#">
-          <img class="catalog__product-item" alt="Корм Энерджи рисом">
+          <img class="catalog__product-item" src="#" alt="Корм Энерджи рисом">
         </a>
         <a class="catalog__product__link-title" href="#">
           <h3 class="catalog__product__item-title">Cat Energy Slim 500г</h3>
@@ -178,7 +178,6 @@
       <p class="catalog__additionally-text">На самом деле вкусов гараздо больше!</p>
       <a href="#" class="catalog__additionally-link">Показать все</a>
     </div>
-    </div>
   </section>
   <section class="add-catalog">
     <div class="add-catalog-add">
@@ -196,7 +195,7 @@
               </tr>
             </tbody>
           </table>
-          <a class="add-catalog__button" href="#">Заказать</a>
+          <a class="add-catalog__button button" href="#">Заказать</a>
         </li>
         <li class="add-catalog__item">
           <h3 class="add-catalog__item-title">Питьевая вода</h3>
@@ -208,7 +207,7 @@
               </tr>
             </tbody>
           </table>
-          <a class="add-catalog__button" href="#">Заказать</a>
+          <a class="add-catalog__button button" href="#">Заказать</a>
         </li>
         <li class="add-catalog__item">
           <h3 class="add-catalog__item-title">Молоко</h3>
@@ -220,7 +219,7 @@
               </tr>
             </tbody>
           </table>
-          <a class="add-catalog__button" href="#">Заказать</a>
+          <a class="add-catalog__button button" href="#">Заказать</a>
         </li>
         <li class="add-catalog__item">
           <h3 class="add-catalog__item-title">Витамины</h3>
@@ -232,7 +231,7 @@
               </tr>
             </tbody>
           </table>
-          <a class="add-catalog__button" href="#">Заказать</a>
+          <a class="add-catalog__button button" href="#">Заказать</a>
         </li>
       </ul>
     </div>
@@ -267,7 +266,9 @@
           width="766" height="560" allowfullscreen
           title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
       </div>
+    </div>
   </section>
+  </main>
   <section class="footer">
     <div class="footer-wrapper">
       <a class="footer-logo-link" href="index.html">
@@ -296,8 +297,6 @@
       <svg class="footer-developer-icon" width="27" height="34"></svg>
     </a>
   </section>
-</main>
-
 </body>
 
 </html>

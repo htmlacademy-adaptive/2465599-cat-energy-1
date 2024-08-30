@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body>
-  <header class="header">
+<body class="page__body">
+  <header class="main-header">
     <a class="header-logo" href="index.html">
-      <img class="header-logo__picture" width="33" height="38" alt="Логотип Кэт энерджи">
-      <img class="header-logo__text" width="101" height="18" alt="Кэт энерджи">
+      <img class="header-logo__picture" src="#" width="33" height="38" alt="Логотип Кэт энерджи">
+      <img class="header-logo__text" src="#" width="101" height="18" alt="Кэт энерджи">
     </a>
     <nav class="navigation-main">
       <button class="navigation-main__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="navigation-main__wrapper">
-        <ul class="navigation-list">
+        <ul class="navigation-list ">
           <li class="navigation-item">
-            <a href="index.html">
+            <a href="index.html" class="navigation-menu">
               Главная</a>
           </li>
-          <li class="navigation-item">
-            <a>
+          <li class="navigation-item ">
+            <a href="catalog.html" class="navigation-menu">
               Каталог продукции
             </a>
           </li>
-          <li class="navigation-item">
-            <a>
+          <li class="navigation-item navigation-item--active">
+            <a href="form.html" class="navigation-menu">
               Подбор программы
             </a>
           </li>
@@ -36,44 +36,48 @@
   </header>
   <main>
     <section class="title-block">
-      <h1 class="title-block__title">Подбор программу</h1>
-      <p class="title-block__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="title-block__form" action="https://echo.htmlacademy.ru" method="post"></form>
-      <fieldset class="block-parametrs">
-        <legend class="visually-hidden">Параметры</legend>
-        <ul class="block-parametrs__list">
-          <li class="block-parametrs__item">
-            <label class="block-field">
-              <span class="block-field__text">Имя:*</span>
-            </label>
-            <input class="block-field-control" type="text" placeholder="Барсик" required>
-          </li>
-          <li class="block-parametrs__item">
-            <label class="block-field"></label>
-            <span class="block-field-text">Вес:кг*</span>
-            <input class="block-field-control" type="text" placeholder="7" required>
-          </li>
-          <li class="block-parametrs__item">
-            <label class="block-field"></label>
-            <span class="block-field-text">Возраст:лет</span>
-            <input class="block-field-control" type="text" placeholder="7" required>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="block-choice">
-        <div class="block-choice__form">
-          <input class="block-choice__input" type="radio" id="slim" name="choice" checked>
-          <label class="block-choice__form-radio" for="slim" tabindex="0">Похудение</label>
+      <div class="title-block__set title-block__set--personal">
+        <h1 class="title-block__title">Подбор программу</h1>
+        <p class="title-block__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="title-block__form" action="https://echo.htmlacademy.ru" method="post"></form>
+        <fieldset class="block-parametrs">
+          <legend class="visually-hidden">Параметры</legend>
+          <ul class="block-parametrs__list">
+            <li class="block-parametrs__item">
+              <label class="block-field">
+                <span class="block-field__text">Имя:*</span>
+              </label>
+              <input class="block-field-control" type="text" placeholder="Барсик" required>
+            </li>
+            <li class="block-parametrs__item">
+              <label class="block-field"></label>
+              <span class="block-field-text">Вес:кг*</span>
+              <input class="block-field-control" type="text" placeholder="7" required>
+            </li>
+            <li class="block-parametrs__item">
+              <label class="block-field"></label>
+              <span class="block-field-text">Возраст:лет</span>
+              <input class="block-field-control" type="text" placeholder="7" required>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+        <fieldset class="block-choice">
+          <div class="block-choice__set block-choice__set--program">
+          <div class="block-choice__form">
+            <input class="block-choice__input" type="radio" id="slim" name="choice" checked>
+            <label class="block-choice__form block-choice__form--radio" for="slim" tabindex="0">Похудение</label>
           </div>
           <div class="block-choice__form">
-          <input class="block-choice__input" type="radio" id="mass" name="choice">
-          <label class="block-choice__form-radio" for="mass" tabindex="0">Набор массы</label>
-        </div>
-        </div class="block_choice-form">
-        <input class="block-choice__input"type="radio" id="advice" name="choice">
-        <label class="block-choice__form-radio" for="advice" tabindex="0">Не знаю(нужен ващ совет)</label>
-        </div>
-      </fieldset>
+            <input class="block-choice__input" type="radio" id="mass" name="choice">
+            <label class="block-choice__form block-choice__form--radio" for="mass" tabindex="0">Набор массы</label>
+          </div>
+          <div class="block-choice-form">
+            <input class="block-choice__input" type="radio" id="advice" name="choice">
+            <label class="block-choice__form block-choice__form--radio" for="advice" tabindex="0">Не знаю(нужен ващ совет)</label>
+          </div>
+          </div>
+        </fieldset>
       <fieldset class="block-question">
         <h3 class="block-question__title">Контактные данные(владелец кота)</h3>
         <div class="question">
@@ -81,7 +85,7 @@
             <span class="form-field__text">E-mail:*</span>
             <input class="form-field__control form-field__control--icon" type="email" placeholder="kuklachev@gmail.com"
               required>
-            <svg class="form-field__icon" wight="18" height="20"></svg>
+            <svg class="form-field__icon" height="20"></svg>
           </label>
         </div>
         <div class="mobile">
@@ -89,7 +93,7 @@
             <span class="form-field__text">Телефон:*</span>
             <input class="form-field__control form-field__control--icon" type="tel" placeholder="8(960) 900-60-90"
               required>
-            <svg class="form-field__icon" wight="18" height="20"></svg>
+            <svg class="form-field__icon" height="20"></svg>
           </label>
         </div>
       </fieldset>
@@ -121,24 +125,25 @@
         <span class="block-note">*-Обязательные поля</span>
       </div>
     </section>
-  </main>
-  <section class="contacts">
-    <h2 class="visually-hidden">Как нас найти?</h2>
-    <div class="contacts-wpapper">
-      <div class="container">
-        <div class="contacts-inner">
-          <h2 class="contacts-title">приглашаем к сотрудничеству дилеров!</h2>
+    <section class="contacts">
+      <h2 class="visually-hidden">Как нас найти?</h2>
+      <div class="contacts-wpapper">
+        <div class="container">
+          <div class="contacts-inner">
+            <h2 class="contacts-title">приглашаем к сотрудничеству дилеров!</h2>
+          </div>
+          <div class="contacts-adress">
+            <p class="contacts-adress__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p class="contacts-adress__city">Санкт-Петербург</p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639009892658!5m2!1sen!2sru"
+            width="766" height="560" allowfullscreen
+            title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
         </div>
-        <div class="contacts-adress">
-          <p class="contacts-adress__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <p class="contacts-adress__city">Санкт-Петербург</p>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8356051389692!2d30.317491999999998!3d59.9680504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sen!2sru!4v1639009892658!5m2!1sen!2sru"
-          width="766" height="560" allowfullscreen
-          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
       </div>
-  </section>
+    </section>
+  </main>
   <section class="footer">
     <div class="footer-wrapper">
       <a class="footer-logo-link" href="index.html">
@@ -167,7 +172,6 @@
       <svg class="footer-developer-icon" width="27" height="34"></svg>
     </a>
   </section>
-</main>
 </body>
 
 </html>
